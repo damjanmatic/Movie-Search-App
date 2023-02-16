@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+    background-image: url(./img/THJJRUhNlEc.png);
+    background-color: black;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.nav {
+    background: white;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-15px);
+    background: none;
+}
+
+.search-btn {
+    border: 0;
+    background: 0;
+    padding: 5px;
+    cursor: pointer;
+    background: whitesmoke;
+    width: 70px;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.search {
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid lightgray;
+    border-right: 0;
+    padding: 10px;
+    width: 400px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+a {
+    align-self: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.intro-title {
+    justify-self: center;
+    align-self: center;
+    color: whitesmoke;
+    font-size: 48px;
+}
+
+.main {
+    min-height: 500px;
+    display: grid;
+}
+
+.main-wrapper {
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-wrapper>img {
+    width: 200px;
+    height: 200px;
+}
+
+.not-found {
+    text-align: center;
+}
+
+.movie-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    margin-bottom: 2em;
+    max-width: 700px;
+}
+
+.movie-wrapper p {
+    max-width: 550px;
+}
+
+.movie-wrapper h4 {
+    margin-bottom: 1em;
+}
+
+.movie-wrapper img {
+    max-width: 120px;
+    max-height: 210px;
+    margin-right: 1em;
+}
+
+.movie-titles {
+    display: flex;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.movie-titles h5 {
+    margin-left: 1em;
+    align-self: center;
+}
+
+.movie-titles-info {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    margin-bottom: .5em;
+}
+
+.add {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-5px);
+    background: black;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.add:hover {
+    transform: scale(1.05);
+}
+
+.add:focus {
+    transform: scale(1.0);
+    outline: 1px solid black;
+    outline-offset: 3px;
+}
+
+.empty-list {
+    display: grid;
+}
+
+.empty-list h3 {
+    color: #979393;
+}
+
+.empty-list a {
+    margin: 1em auto;
+}
